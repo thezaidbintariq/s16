@@ -36,19 +36,19 @@ const Navbar = () => {
                   </div>
                   <div className={`${classes.navlink} ${isMobile && navbarOpen ? classes.hideMenu : ""}`}>
                     
-                      <a href="#" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Mint</a>
-                      <a href="#" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Presale</a>
-                      <a href="#" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Artist</a>
-                      <a href="#" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Benefits</a>
-                      <a href="#" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Roadmap</a>
+                      <a href="/" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Mint</a>
+                      <a href="/" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Presale</a>
+                      <a href="/" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Artist</a>
+                      <a href="/" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Benefits</a>
+                      <a href="/" className={`${classes.hoverUnderlineAnimation} ${classes.mx}`}>Roadmap</a>
                       <div className={classes.iconsWrapper}>
-                        <a href="#"><ShipIcon className={classes.icons}/></a>
-                        <a href="#"><DiscordIcon className={classes.icons}/></a>
-                        <a href="#"><TwitterIcon className={classes.icons}/></a>
-                        <a href="#"><InstagramIcon className={classes.icons} /></a>
+                        <a href="/"><ShipIcon className={classes.icons}/></a>
+                        <a href="/"><DiscordIcon className={classes.icons}/></a>
+                        <a href="/"><TwitterIcon className={classes.icons}/></a>
+                        <a href="/"><InstagramIcon className={classes.icons} /></a>
                         </div>
                       <button className={classes.btn}>Connect Wallet</button>
-                      <a href="#"><LogoutIcon className={classes.iconLogout}/></a>
+                      <a href="/"><LogoutIcon className={classes.iconLogout}/></a>
                   </div>
                   <button onClick={handleToggle} className={classes.hamburger}>
                       <Hamburger hideOutline={true} rounded toggled={isOpen} toggle={setOpen} size={28} color="#fff"/>

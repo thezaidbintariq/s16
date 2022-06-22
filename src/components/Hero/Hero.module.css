@@ -2,69 +2,115 @@
 
   width: 100vw;
   height: 100vh;
-  background: #ff3939;
-
-
 }
 
 .hero__grid {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background: #ff0000;
-  padding-top: 6.25rem;
-  padding-bottom: 3.438rem;
-  width: inherit;
-  flex-grow: 1;
-  flex-shrink: 1;
-  height: 100vh; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .hero__gridItem {
-    background-color: aqua;
-    height: 100vh;
+  
+    background: #000000;
+    color: #fff;
     padding: 7.5rem;
     padding-top: 6.25rem;
     padding-bottom: 3.438rem;
     padding-right: 2rem;
-    /* width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: #c8ff00; */
+    width: 50%;
     
 }
 .hero__gridItem1 {
-    background-color: blue;
-    /* height: 100vh; */
+    background-color: #000000;
     padding-top: 7.625rem;
     padding-left: 1.813rem;
     padding-bottom: 5.125rem;
-    /* width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: #c8ff00; */
-    
+    width: 50%;
 }
 
 img {
-  width: 100%;
-  height: 49.639rem;
+  width: 100% ;
+  height: max(794.23px, auto);
+  max-height: 800px;
 }
 
+.hero__gridItem__text__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
 
+.hero__gridItem__text__title {
+    font-size: 2.375rem;
+    font-weight: extra-bold;
+    margin-bottom: 1.875rem;
+    line-height: 1.4;
+}
 
+.hero__gridItem__text__subtitle {
+    font-size: 1.563rem;
+    font-weight: bold;
+    margin-bottom: 1.875rem;
+    line-height: 1.4;
+}
+
+.hero__gridItem__text__subtitle__small {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-bottom: 1.875rem;
+    line-height: 1.4;
+}
+
+.hero__gridItem__text__subtitle__smaller {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.hero__gridItem__text__form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero__gridItem__text__form__input {
+    width: 100%;
+    height: 2.5rem;
+    border-bottom: 2px solid #ffffff50;
+    border-top: 1px solid #ffffff00;
+    border-left: 1px solid #ffffff00;
+    border-right: 1px solid #ffffff00;
+    padding-right: 0.625rem;
+    padding-top: 0.625rem;
+
+    color: white;
+    background: #000000;
+    
+}
+
+.hero__gridItem__text__form__input:focus {
+    outline: none !important;
+    border-bottom:2px solid rgb(255, 255, 255);
+}
+
+.hero__gridItem__text__form__btn {
+    padding: 1.188rem 8.438rem;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.hero__gridItem__text__form__btn:hover {
+  transition: all 0.3s ease 0s;
+  
+  transform: scale(1.05);
+}
 
 
 @media only screen and (max-width: 1400px){
@@ -82,6 +128,7 @@ img {
       padding-left: 3rem;
       justify-content: center;
     }
+   
 
 }
 
@@ -90,47 +137,46 @@ img {
       padding-left: 2rem;
       justify-content: center;
     }
+ 
 
-	/*Big smartphones [426px -> 600px]*/
-    /* .hero__grid {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    } */
     .hero__grid{
         display: grid;
         grid-template-columns: 1fr;
         height: 100%;
+       
 }
+.hero__grid div:nth-child(1){
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+}
+.hero__grid div:nth-child(2){
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1;
+}
+
+
+
 .hero__gridItem {
-    background-color: aqua;
-    height: 50vh;
+    background-color: rgb(0, 0, 0);
     width: 100vw;
-    /* width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: #c8ff00; */
     
 }
 .hero__gridItem1 {
-    background-color: blue;
-    height: 50vh;
+    background-color: rgb(0, 0, 0);
     width: 100vw;
-    /* width: 50%;
-    height: 100%;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: #c8ff00; */
     
 }
-
+ .hero__gridItem__text__form__btn{
+        width: 100%;
+    }
 }
 
 
@@ -139,6 +185,9 @@ img {
     .hero__gridItem {
       padding-left: 1.5rem;
       justify-content: center;
+    }
+    .hero__gridItem__text__form__btn{
+        width: 100%;
     }
 
 
